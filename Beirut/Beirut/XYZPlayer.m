@@ -10,4 +10,15 @@
 
 @implementation XYZPlayer
 
+- (id)init
+{
+    self = [super init];
+    if (self)
+    {
+        _hits = 0;
+        _miss = 0;
+        
+    }
+    return self;
+}
 @end

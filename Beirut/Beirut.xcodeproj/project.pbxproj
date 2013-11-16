@@ -10,6 +10,7 @@
 		3EA0E6B0183732E700E1905D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EA0E6AF183732E700E1905D /* Main.storyboard */; };
 		3EA0E6B318375EB300E1905D /* XYZPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA0E6B218375EB300E1905D /* XYZPlayer.m */; };
 		3EA0E6B6183764AA00E1905D /* XYZGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA0E6B5183764AA00E1905D /* XYZGameViewController.m */; };
+		3EA0E6B9183775DD00E1905D /* XYZGameSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA0E6B8183775DD00E1905D /* XYZGameSetupViewController.m */; };
 		3EE3278D18372CEE00530520 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE3278C18372CEE00530520 /* Foundation.framework */; };
 		3EE3278F18372CEE00530520 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE3278E18372CEE00530520 /* CoreGraphics.framework */; };
 		3EE3279118372CEE00530520 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE3279018372CEE00530520 /* UIKit.framework */; };
@@ -41,6 +42,8 @@
 		3EA0E6B218375EB300E1905D /* XYZPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZPlayer.m; sourceTree = "<group>"; };
 		3EA0E6B4183764AA00E1905D /* XYZGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZGameViewController.h; sourceTree = "<group>"; };
 		3EA0E6B5183764AA00E1905D /* XYZGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZGameViewController.m; sourceTree = "<group>"; };
+		3EA0E6B7183775DD00E1905D /* XYZGameSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZGameSetupViewController.h; sourceTree = "<group>"; };
+		3EA0E6B8183775DD00E1905D /* XYZGameSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZGameSetupViewController.m; sourceTree = "<group>"; };
 		3EE3278918372CEE00530520 /* Beirut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beirut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE3278C18372CEE00530520 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3EE3278E18372CEE00530520 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -120,6 +123,8 @@
 				3EE3279B18372CEE00530520 /* XYZAppDelegate.h */,
 				3EE3279C18372CEE00530520 /* XYZAppDelegate.m */,
 				3EA0E6AF183732E700E1905D /* Main.storyboard */,
+				3EA0E6B7183775DD00E1905D /* XYZGameSetupViewController.h */,
+				3EA0E6B8183775DD00E1905D /* XYZGameSetupViewController.m */,
 				3EA0E6B4183764AA00E1905D /* XYZGameViewController.h */,
 				3EA0E6B5183764AA00E1905D /* XYZGameViewController.m */,
 				3EA0E6B118375EB300E1905D /* XYZPlayer.h */,
@@ -262,6 +267,7 @@
 				3EE3279D18372CEE00530520 /* XYZAppDelegate.m in Sources */,
 				3EA0E6B6183764AA00E1905D /* XYZGameViewController.m in Sources */,
 				3EE3279918372CEE00530520 /* main.m in Sources */,
+				3EA0E6B9183775DD00E1905D /* XYZGameSetupViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
