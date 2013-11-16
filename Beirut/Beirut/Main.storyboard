@@ -66,7 +66,7 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="TY8-TX-rbD" kind="push" id="vsY-Ny-zOz"/>
+                                    <segue destination="TY8-TX-rbD" kind="push" id="PS8-2a-TWq"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beirut" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRh-FC-sBQ">
@@ -168,7 +168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fhl-hC-364" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1348" y="1003"/>
+            <point key="canvasLocation" x="1497" y="953"/>
         </scene>
         <!--Game Setup View Controller-->
         <scene sceneID="G2m-zd-Gg8">
