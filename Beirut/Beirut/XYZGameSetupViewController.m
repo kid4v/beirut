@@ -9,14 +9,21 @@
 #import "XYZGameSetupViewController.h"
 #import "XYZPlayer.h"
 @interface XYZGameSetupViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *doneButton;
 @property (weak, nonatomic) IBOutlet UITextField *textField4;
-@property (weak, nonatomic) IBOutlet UIButton *doneButton4;
 @property (weak, nonatomic) IBOutlet UITextField *textField3;
-@property (weak, nonatomic) IBOutlet UIButton *donebutton3;
 @property (weak, nonatomic) IBOutlet UITextField *textField2;
-@property (weak, nonatomic) IBOutlet UIButton *doneButton2;
 @property (weak, nonatomic) IBOutlet UITextField *textField1;
-@property (weak, nonatomic) IBOutlet UIButton *doneButton1;
+
+
+//@property (weak, nonatomic) IBOutlet UITextField *textField4;
+//@property (weak, nonatomic) IBOutlet UIButton *doneButton4;
+//@property (weak, nonatomic) IBOutlet UITextField *textField3;
+//@property (weak, nonatomic) IBOutlet UIButton *donebutton3;
+//@property (weak, nonatomic) IBOutlet UITextField *textField2;
+//@property (weak, nonatomic) IBOutlet UIButton *doneButton2;
+//@property (weak, nonatomic) IBOutlet UITextField *textField1;
+//@property (weak, nonatomic) IBOutlet UIButton *doneButton1;
 
 @end
 
@@ -52,7 +59,7 @@
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if (sender != self.doneButton1) return;
+    if (sender != self.doneButton) return;
     self.Player1 = [[XYZPlayer alloc] init];
     self.Player2 = [[XYZPlayer alloc] init];
     self.Player3 = [[XYZPlayer alloc] init];
@@ -64,7 +71,7 @@
         self.Player2.name = self.textField2.text;
     } else { self.Player2.name = @"Player 2";}
     if (self.textField3.text.length > 0) {
-        self.Player3.name = self.textField1.text;
+        self.Player3.name = self.textField3.text;
     } else { self.Player3.name = @"Player 3";}
     if (self.textField4.text.length > 0) {
         self.Player4.name = self.textField4.text;

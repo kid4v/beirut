@@ -276,7 +276,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="L4X-H5-6vR" kind="push" id="5KJ-DY-s3f"/>
+                                    <segue destination="L4X-H5-6vR" kind="push" id="Rmo-bI-Cj2"/>
                                 </connections>
                             </button>
                             <connections>
@@ -285,16 +285,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="doneButton" destination="fW1-Kv-6b8" id="Re5-3q-8bd"/>
-                        <outlet property="doneButton1" destination="hcd-VZ-0Sl" id="5sV-Ku-9uA"/>
-                        <outlet property="doneButton2" destination="hcd-VZ-0Sl" id="dgz-Am-6hj"/>
-                        <outlet property="doneButton4" destination="hcd-VZ-0Sl" id="tuW-QZ-1dm"/>
-                        <outlet property="donebutton3" destination="hcd-VZ-0Sl" id="dCk-Ay-Mp2"/>
-                        <outlet property="textField" destination="yGy-eR-ese" id="aUw-QW-Lbc"/>
-                        <outlet property="textField1" destination="RKt-Te-HMf" id="zcF-ld-Mct"/>
-                        <outlet property="textField2" destination="yGy-eR-ese" id="vtu-ab-qea"/>
-                        <outlet property="textField3" destination="8Mh-rO-3fy" id="u3H-LA-zVd"/>
-                        <outlet property="textField4" destination="w0P-mo-0zd" id="3cL-A0-FFo"/>
+                        <outlet property="doneButton" destination="hcd-VZ-0Sl" id="SgZ-ax-L1S"/>
+                        <outlet property="textField1" destination="RKt-Te-HMf" id="r58-V1-kUf"/>
+                        <outlet property="textField2" destination="yGy-eR-ese" id="Viw-ef-FgW"/>
+                        <outlet property="textField3" destination="8Mh-rO-3fy" id="Ohj-vb-EgY"/>
+                        <outlet property="textField4" destination="w0P-mo-0zd" id="aWp-tY-gA9"/>
                     </connections>
                 </viewController>
                 <exit id="DFq-XH-lPv" userLabel="Exit" sceneMemberID="exit"/>
