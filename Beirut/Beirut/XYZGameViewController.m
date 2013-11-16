@@ -18,6 +18,12 @@
 @property IBOutlet UILabel* p3Name;
 @property XYZPlayer *Player4;
 @property IBOutlet UILabel* p4Name;
+
+@property NSString *temp1;
+@property NSString *temp2;
+@property NSString *temp3;
+@property NSString *temp4;
+
 @end
 
 @implementation XYZGameViewController
@@ -30,22 +36,31 @@
     }
     return self;
 }
+- (void) setupPlayerNames: (NSString *) p1 andPlayer2: (NSString *) p2 andPlayer3: (NSString *) p3 andPlayer4: (NSString *) p4
+{
+    NSLog(p1);
+    self.temp1 = p1;
+    self.temp2 = p2;
+    self.temp3 = p3;
+    self.temp4 = p4;
+}
+
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue
 {
     XYZGameSetupViewController *source = [segue sourceViewController];
-    self.Player1 = source.Player1;
-    self.p1Name.text = self.Player1.name;
-    self.Player2 = source.Player2;
-    self.p2Name.text = self.Player2.name;
-    self.Player3 = source.Player3;
-    self.p3Name.text = self.Player3.name;
-    self.Player4 = source.Player4;
-    self.p4Name.text = self.Player4.name;
+    
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.p1Name.text = self.temp1;
+    self.p2Name.text = self.temp2;
+    self.p3Name.text = self.temp3;
+    self.p4Name.text = self.temp4;
+    
+
 }
 
 

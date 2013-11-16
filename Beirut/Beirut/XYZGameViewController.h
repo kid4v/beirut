@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface XYZGameViewController : UIViewController
-
+- (void) setupPlayerNames: (NSString *) p1 andPlayer2: (NSString *) p2 andPlayer3: (NSString *) p3 andPlayer4: (NSString *) p4;
 @end

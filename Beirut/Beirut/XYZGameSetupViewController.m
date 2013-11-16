@@ -7,6 +7,7 @@
 //
 
 #import "XYZGameSetupViewController.h"
+#import "XYZGameViewController.h"
 #import "XYZPlayer.h"
 @interface XYZGameSetupViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *doneButton;
@@ -49,6 +50,7 @@
     self.Player2.partner = self.Player1;
     self.Player3.partner = self.Player4;
     self.Player4.partner = self.Player3;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -76,8 +78,8 @@
     if (self.textField4.text.length > 0) {
         self.Player4.name = self.textField4.text;
     } else { self.Player4.name = @"Player 4";}
-    
-    
+    XYZGameViewController *destViewController = segue.destinationViewController;
+    [destViewController setupPlayerNames: self.textField1.text andPlayer2: self.Player2.name andPlayer3: self.Player3.name andPlayer4: self.Player4.name];
 }
 
 @end

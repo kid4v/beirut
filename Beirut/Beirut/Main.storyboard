@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="rJo-pZ-5A1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KiU-Wk-jdP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seamless-wood-texture-dark.png" translatesAutoresizingMaskIntoConstraints="NO" id="YJC-PF-DmO">
@@ -97,7 +97,7 @@
                         <viewControllerLayoutGuide type="bottom" id="pWb-8z-DfH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="O73-t9-XS7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seamless-wood-texture-dark.png" translatesAutoresizingMaskIntoConstraints="NO" id="OZS-EB-miu">
@@ -142,7 +142,7 @@
                         <viewControllerLayoutGuide type="bottom" id="u27-nY-eNc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2bw-ps-2rD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seamless-wood-texture-dark.png" translatesAutoresizingMaskIntoConstraints="NO" id="w9C-fH-BxG">
@@ -157,7 +157,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gS3-f0-e6V">
-                                <rect key="frame" x="25" y="145" width="275" height="395"/>
+                                <rect key="frame" x="25" y="145" width="275" height="307"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -179,7 +179,7 @@
                         <viewControllerLayoutGuide type="bottom" id="bH0-bX-450"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fPC-M5-EvP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seamless-wood-texture-dark.png" translatesAutoresizingMaskIntoConstraints="NO" id="EmD-oU-NSf">
@@ -306,33 +306,33 @@
                         <viewControllerLayoutGuide type="bottom" id="up4-iJ-6u5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="R1v-wb-Cw1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seamless-wood-texture-dark.png" translatesAutoresizingMaskIntoConstraints="NO" id="too-AF-2ca">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="-11" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewC-l5-cwO">
-                                <rect key="frame" x="74" y="177" width="42" height="21"/>
+                                <rect key="frame" x="11" y="66" width="146" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32R-Qv-UlS">
-                                <rect key="frame" x="74" y="226" width="42" height="21"/>
+                                <rect key="frame" x="11" y="99" width="146" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duY-O4-g5V">
-                                <rect key="frame" x="199" y="177" width="42" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duY-O4-g5V">
+                                <rect key="frame" x="165" y="70" width="148" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVl-OW-aWP">
-                                <rect key="frame" x="199" y="226" width="42" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVl-OW-aWP">
+                                <rect key="frame" x="165" y="99" width="148" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -349,7 +349,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="IvU-Lm-X1e"/>
                     <connections>
-                        <outlet property="p1Name" destination="ewC-l5-cwO" id="vhO-cQ-AfZ"/>
+                        <outlet property="p1Name" destination="ewC-l5-cwO" id="LUB-EK-bdB"/>
                         <outlet property="p2Name" destination="duY-O4-g5V" id="HZe-aI-FL4"/>
                         <outlet property="p3Name" destination="32R-Qv-UlS" id="nLT-Cf-Mco"/>
                         <outlet property="p4Name" destination="OVl-OW-aWP" id="dDd-Mu-hpa"/>
@@ -385,6 +385,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
