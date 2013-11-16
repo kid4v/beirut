@@ -14,6 +14,8 @@
 {
     [self.window setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"seamless-wood-texture-dark.png"]]];
     return YES;
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"redcup.png"]]];
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
