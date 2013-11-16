@@ -11,9 +11,13 @@
 #import "XYZGameSetupViewController.h"
 @interface XYZGameViewController ()
 @property XYZPlayer *Player1;
+@property IBOutlet UILabel* p1Name;
 @property XYZPlayer *Player2;
+@property IBOutlet UILabel* p2Name;
 @property XYZPlayer *Player3;
+@property IBOutlet UILabel* p3Name;
 @property XYZPlayer *Player4;
+@property IBOutlet UILabel* p4Name;
 @end
 
 @implementation XYZGameViewController
@@ -29,10 +33,14 @@
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue
 {
     XYZGameSetupViewController *source = [segue sourceViewController];
-    XYZPlayer *P1 = source.Player1;
-    XYZPlayer *P2 = source.Player2;
-    XYZPlayer *P3 = source.Player3;
-    XYZPlayer *P4 = source.Player4;
+    self.Player1 = source.Player1;
+    self.p1Name.text = self.Player1.name;
+    self.Player2 = source.Player2;
+    self.p2Name.text = self.Player2.name;
+    self.Player3 = source.Player3;
+    self.p3Name.text = self.Player3.name;
+    self.Player4 = source.Player4;
+    self.p4Name.text = self.Player4.name;
 }
 
 - (void)viewDidLoad

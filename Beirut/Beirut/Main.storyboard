@@ -170,10 +170,10 @@
             </objects>
             <point key="canvasLocation" x="1348" y="1003"/>
         </scene>
-        <!--Game View Controller-->
+        <!--Game Setup View Controller-->
         <scene sceneID="G2m-zd-Gg8">
             <objects>
-                <viewController id="rYw-Hq-JTp" customClass="XYZGameViewController" sceneMemberID="viewController">
+                <viewController id="rYw-Hq-JTp" customClass="XYZGameSetupViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WBV-aE-Web"/>
                         <viewControllerLayoutGuide type="bottom" id="bH0-bX-450"/>
@@ -276,7 +276,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="L4X-H5-6vR" kind="modal" id="JL3-cj-ovj"/>
+                                    <segue destination="L4X-H5-6vR" kind="push" id="5KJ-DY-s3f"/>
                                 </connections>
                             </button>
                             <connections>
@@ -297,15 +297,15 @@
                         <outlet property="textField4" destination="w0P-mo-0zd" id="3cL-A0-FFo"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zjq-W8-2re" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="DFq-XH-lPv" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zjq-W8-2re" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1356" y="-392"/>
+            <point key="canvasLocation" x="1268" y="-386"/>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="SwO-Ih-ht0">
             <objects>
-                <viewController id="L4X-H5-6vR" sceneMemberID="viewController">
+                <viewController id="L4X-H5-6vR" customClass="XYZGameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Yei-Wu-VuW"/>
                         <viewControllerLayoutGuide type="bottom" id="up4-iJ-6u5"/>
@@ -318,9 +318,40 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewC-l5-cwO">
+                                <rect key="frame" x="74" y="177" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32R-Qv-UlS">
+                                <rect key="frame" x="74" y="226" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duY-O4-g5V">
+                                <rect key="frame" x="199" y="177" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVl-OW-aWP">
+                                <rect key="frame" x="199" y="226" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="IvU-Lm-X1e"/>
+                    <connections>
+                        <outlet property="p1Name" destination="ewC-l5-cwO" id="vhO-cQ-AfZ"/>
+                        <outlet property="p2Name" destination="duY-O4-g5V" id="HZe-aI-FL4"/>
+                        <outlet property="p3Name" destination="32R-Qv-UlS" id="nLT-Cf-Mco"/>
+                        <outlet property="p4Name" destination="OVl-OW-aWP" id="dDd-Mu-hpa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgo-sI-pCz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
