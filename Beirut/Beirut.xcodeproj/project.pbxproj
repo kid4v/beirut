@@ -20,6 +20,7 @@
 		3EE327A818372CF000530520 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE3279018372CEE00530520 /* UIKit.framework */; };
 		3EE327B018372CF000530520 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3EE327AE18372CF000530520 /* InfoPlist.strings */; };
 		3EE327B218372CF000530520 /* BeirutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE327B118372CF000530520 /* BeirutTests.m */; };
+		F533F96F1837425800EED573 /* seamless-wood-texture-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = F533F96E1837425800EED573 /* seamless-wood-texture-dark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		3EE327AD18372CF000530520 /* BeirutTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeirutTests-Info.plist"; sourceTree = "<group>"; };
 		3EE327AF18372CF000530520 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3EE327B118372CF000530520 /* BeirutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeirutTests.m; sourceTree = "<group>"; };
+		F533F96E1837425800EED573 /* seamless-wood-texture-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seamless-wood-texture-dark.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				3EE3279C18372CEE00530520 /* XYZAppDelegate.m */,
 				3EA0E6AF183732E700E1905D /* Main.storyboard */,
 				3EE3279E18372CEF00530520 /* Images.xcassets */,
+				F533F96E1837425800EED573 /* seamless-wood-texture-dark.png */,
 				3EE3279318372CEE00530520 /* Supporting Files */,
 			);
 			path = Beirut;
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EA0E6B0183732E700E1905D /* Main.storyboard in Resources */,
+				F533F96F1837425800EED573 /* seamless-wood-texture-dark.png in Resources */,
 				3EE3279718372CEE00530520 /* InfoPlist.strings in Resources */,
 				3EE3279F18372CEF00530520 /* Images.xcassets in Resources */,
 			);
@@ -291,7 +295,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -330,7 +333,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -388,7 +390,6 @@
 		3EE327B918372CF000530520 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Beirut.app/Beirut";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -411,7 +412,6 @@
 		3EE327BA18372CF000530520 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Beirut.app/Beirut";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
