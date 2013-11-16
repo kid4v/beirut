@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XYZPlayer.h"
 
 @interface XYZGameSetupViewController : UIViewController
-
+@property XYZPlayer *Player1;
+@property XYZPlayer *Player2;
+@property XYZPlayer *Player3;
+@property XYZPlayer *Player4;
 @end
