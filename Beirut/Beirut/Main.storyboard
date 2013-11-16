@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="O1c-Lm-V7S">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ivi-On-UbK">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -29,6 +29,9 @@
                                     <color key="titleColor" red="0.9803922176361084" green="0.0039215688593685627" blue="0.12156863510608673" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="rYw-Hq-JTp" kind="push" id="y4G-4T-gRK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jM9-rb-J5B">
                                 <rect key="frame" x="126" y="246" width="79" height="30"/>
@@ -60,7 +63,7 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="TY8-TX-rbD" kind="modal" id="fHu-GC-IQP"/>
+                                    <segue destination="TY8-TX-rbD" kind="push" id="vsY-Ny-zOz"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beirut" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRh-FC-sBQ">
@@ -73,13 +76,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="HdG-1v-Gse"/>
                     <connections>
                         <outlet property="view" destination="KiU-Wk-jdP" id="05j-wz-pOM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8rP-Iu-hfX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="217" y="361"/>
+            <point key="canvasLocation" x="743" y="361"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tQW-vH-SVY">
@@ -116,7 +120,57 @@
                     <navigationItem key="navigationItem" id="9q6-PS-b29"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="696" y="235"/>
+            <point key="canvasLocation" x="1768" y="595"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="G2m-zd-Gg8">
+            <objects>
+                <viewController id="rYw-Hq-JTp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WBV-aE-Web"/>
+                        <viewControllerLayoutGuide type="bottom" id="bH0-bX-450"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fPC-M5-EvP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seamless-wood-texture-dark.png" translatesAutoresizingMaskIntoConstraints="NO" id="EmD-oU-NSf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avn-wH-his">
+                                <rect key="frame" x="58" y="93" width="205" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="o25-kI-KKH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zjq-W8-2re" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1782" y="-158"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZPy-qq-u3l">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ivi-On-UbK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Aft-9Q-60w">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="O1c-Lm-V7S" kind="relationship" relationship="rootViewController" id="9Xr-Mu-tv9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qoj-tC-t7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="217" y="361"/>
         </scene>
     </scenes>
     <resources>
