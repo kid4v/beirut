@@ -52,6 +52,9 @@
                                     <color key="titleColor" red="0.9803922176361084" green="0.0039215688593685627" blue="0.12156863510608673" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="KvO-MH-hYu" kind="push" id="mhw-pb-oUD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtV-R7-x2S">
                                 <rect key="frame" x="98" y="322" width="124" height="30"/>
@@ -85,10 +88,54 @@
             </objects>
             <point key="canvasLocation" x="743" y="361"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Statistics-->
+        <scene sceneID="HA8-vM-IlA">
+            <objects>
+                <viewController id="KvO-MH-hYu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q7L-7o-jzt"/>
+                        <viewControllerLayoutGuide type="bottom" id="pWb-8z-DfH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O73-t9-XS7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seamless-wood-texture-dark.png" translatesAutoresizingMaskIntoConstraints="NO" id="OZS-EB-miu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" text="" translatesAutoresizingMaskIntoConstraints="NO" id="X3j-YI-G7h">
+                                <rect key="frame" x="0.0" y="63" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="KvO-MH-hYu" id="7gM-mF-k6z"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Statistics" id="5um-cU-BRL"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="HGS-lZ-frZ" id="m3J-VL-nrF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kal-7F-1Xr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="HGS-lZ-frZ">
+                    <connections>
+                        <outlet property="delegate" destination="KvO-MH-hYu" id="pH0-ll-EW5"/>
+                        <outlet property="searchBar" destination="X3j-YI-G7h" id="pFH-hg-YVk"/>
+                        <outlet property="searchContentsController" destination="KvO-MH-hYu" id="apQ-EH-pW6"/>
+                        <outlet property="searchResultsDataSource" destination="KvO-MH-hYu" id="TB8-GL-ujN"/>
+                        <outlet property="searchResultsDelegate" destination="KvO-MH-hYu" id="qtX-iV-9gi"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="1391" y="300"/>
+        </scene>
+        <!--View Controller - Leaderboard-->
         <scene sceneID="tQW-vH-SVY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fhl-hC-364" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="TY8-TX-rbD" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SOm-ad-Teu"/>
@@ -117,10 +164,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="9q6-PS-b29"/>
+                    <navigationItem key="navigationItem" title="Leaderboard" id="9q6-PS-b29"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fhl-hC-364" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1768" y="595"/>
+            <point key="canvasLocation" x="1348" y="1003"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="G2m-zd-Gg8">
@@ -148,11 +196,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="o25-kI-KKH"/>
+                    <navigationItem key="navigationItem" id="o25-kI-KKH">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="fW1-Kv-6b8">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hcd-VZ-0Sl">
+                                <rect key="frame" x="233" y="5" width="71" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zjq-W8-2re" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1782" y="-158"/>
+            <point key="canvasLocation" x="1356" y="-392"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZPy-qq-u3l">
