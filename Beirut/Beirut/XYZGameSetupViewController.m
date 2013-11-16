@@ -18,10 +18,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *textField1;
 @property (weak, nonatomic) IBOutlet UIButton *doneButton1;
 
-@property XYZPlayer *Player1;
-@property XYZPlayer *Player2;
-@property XYZPlayer *Player3;
-@property XYZPlayer *Player4;
 @end
 
 @implementation XYZGameSetupViewController
